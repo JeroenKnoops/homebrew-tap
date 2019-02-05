@@ -10,7 +10,7 @@ class Gitin < Formula
   end
 
   test do
-    system "false"
+    assert_match "gitin version 0.1.0", shell_output("#{bin}/gitin --version", 2)
   end
 end
 
